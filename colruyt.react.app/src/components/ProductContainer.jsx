@@ -3,6 +3,7 @@ import Style from "./ProductContainer.module.css";
 import ProductsNotFound from "./ProductsNotFound";
 
 const ProductContainer = ({ categorie, producten }) => {
+  console.log(categorie)
   const checkIfEmpty = () => {
     if (producten.length !== 0) {
       return (

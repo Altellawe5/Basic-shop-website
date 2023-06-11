@@ -14,7 +14,7 @@ const ProductCard = ({ product }) => {
           />
           <img
             className={Style.nutriImg}
-            src={`../Images/nutriscore/${product.nutriScore}.svg`}
+            src={`../Images/nutriscore/${product.nutriscore}.svg`}
             alt={product.nutriScore}
           />
         </div>
@@ -27,7 +27,7 @@ const ProductCard = ({ product }) => {
       <div className={Style.prijsContainer}>
         <div className={Style.prijs}>
           <p className={Style.bedrag}>{`€${product.price}`}</p>
-          {/* <p className={Style.type}>{product.PriceType.name}</p> */}
+          <p className={Style.type}>{product.ptype.name}</p>
         </div>
         <AddCartButton product={product} />
       </div>

@@ -16,11 +16,10 @@ const CategoriePage = () => {
         const fetchProducten = async () => {
             try {
                 const response = await Axios.get(
-                    `http://localhost:8000/api/Products/Category/${id}`
+                    `http://localhost:8000/api/products/category/${id}`
                 );
                 setProducten(response.data);
-                console.log(producten)
-                console.log(response.data)
+
             } catch (error) {
                 console.log(error);
             }
@@ -30,9 +29,10 @@ const CategoriePage = () => {
         const fetchCategorie = async () => {
             try {
                 const response = await Axios.get(
-                    `https://localhost:8000/api/Category/${id}`
+                    `http://localhost:8000/api/category/${id}`
                 );
                 setCategorie(response.data);
+
             } catch (error) {
                 console.log(error);
             }
